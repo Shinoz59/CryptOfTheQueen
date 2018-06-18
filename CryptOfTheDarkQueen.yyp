@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "044eedb7-c196-45c7-872c-f538bd750258",
+            "Value": {
+                "id": "a8f3a628-1af8-4d21-b457-967de6d06e76",
+                "resourcePath": "objects\\obj_Attack\\obj_Attack.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0621e234-b8cf-41e7-b292-093bd887a0be",
             "Value": {
                 "id": "9a32c9ef-6eec-44f6-ade7-a4dee50d9bc2",
@@ -220,6 +228,14 @@
                 "id": "4c282fc2-3b31-451c-a9a8-584e3698490a",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "c1109f6f-f428-4e19-b98d-b156bc88e90a",
+            "Value": {
+                "id": "bf1bfa20-d013-4d3e-a2f1-c29530f5d5f3",
+                "resourcePath": "sprites\\sprite_attack\\sprite_attack.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
