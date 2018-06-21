@@ -10,7 +10,7 @@ if (is_controlling == true){
 	}
 	 // Attacking?
 	if (keyboard_check(vk_space) && can_walk){
-		can_walk = false;
+		can_walk = false; // Is turned back on by the attack object when it finishes
 		var spawn_x = x;
 		var spawn_y = y;
 		var a_sprite_angle = 0; // For rotating the sprite I guess
