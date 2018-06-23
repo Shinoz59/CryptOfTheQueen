@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "3b1ed5b0-0578-4ef0-9093-21ba102fc615",
+            "Value": {
+                "id": "c496fc97-4ee6-49ba-87d6-42940cd3eb79",
+                "resourcePath": "scripts\\scr_GenerateTileGridObstacles\\scr_GenerateTileGridObstacles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "479b36ab-b890-4db4-85de-b2e46d464de9",
             "Value": {
                 "id": "b970d2a8-a4ec-4ab7-b0df-5906a6467747",
@@ -123,6 +131,14 @@
             "Value": {
                 "id": "5474bb15-c445-4291-bf11-b7c5a657eb92",
                 "resourcePath": "scripts\\scr_StaggerWalk\\scr_StaggerWalk.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "69b0862f-a011-4500-9d8a-51a3e5859200",
+            "Value": {
+                "id": "6014d7fa-31bf-44c6-b723-20c3c3afdf2f",
+                "resourcePath": "scripts\\scr_DrawGridObstacles\\scr_DrawGridObstacles.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -239,6 +255,14 @@
             }
         },
         {
+            "Key": "b273e63c-23df-4066-a2f9-5eeb548987f1",
+            "Value": {
+                "id": "c78bf879-850b-409f-8fc6-416e1503794a",
+                "resourcePath": "objects\\obj_1stFloorGrid\\obj_1stFloorGrid.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bd9de17a-9830-433e-9214-b26fbda07d8d",
             "Value": {
                 "id": "7ce17dee-b346-4acb-aa6b-fe0fdffeccf5",
@@ -346,7 +370,9 @@
     "script_order": [
         "5f057274-46ae-4c04-92e4-a7a2e5a96342",
         "a3295fa2-fe71-4e80-84ed-9c0e664c7b14",
-        "9c535891-0f3f-41d1-a172-1d4d845c2d3e"
+        "9c535891-0f3f-41d1-a172-1d4d845c2d3e",
+        "3b1ed5b0-0578-4ef0-9093-21ba102fc615",
+        "69b0862f-a011-4500-9d8a-51a3e5859200"
     ],
     "tutorial": ""
 }

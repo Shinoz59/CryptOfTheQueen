@@ -6,13 +6,13 @@
 if (direction >= 306 || direction <= 45){ // using a 90 degree chunk rotated 45 degrees to get a good look.
 	image_angle = 0;
 }
-if (direction >= 46 && direction <= 135){
+else if (direction >= 46 && direction <= 135){
 	image_angle = 90;
 }
-if (direction >= 136 && direction <= 225){
+else if (direction >= 136 && direction <= 225){
 	image_angle = 180;
 }
-if (direction >= 226 && direction <= 305){
+else if (direction >= 226 && direction <= 305){
 	image_angle = 270;
 }
 
@@ -25,11 +25,13 @@ if (mouse_check_button_pressed(mb_left)) {
 	instance_create_layer(mouse_x, mouse_y, "Instances", obj_goal);
 	
 	var myPath = path_add();
-	mp_potential_path(myPath, obj_goal.x, obj_goal.y, 2, 5, false);
+	mp_grid_path(myGrid, myPath, x, y, obj_goal.x, obj_goal.y, false);
+	//mp_potential_path(myPath, obj_goal.x, obj_goal.y, 2, 5, false);
 	path_start(myPath, 2, path_action_stop, true);
 }
+// how to find a path goal based on ai knowledge instead of just clicking for a path.
 
-if (instance_exists(obj_goal)){
-	mp_potential_step(obj_goal.x, obj_goal.y, 2, false); // needs some shenanigans to make it work, but yeah.
+//if (instance_exists(obj_goal)){
+	//mp_potential_step(obj_goal.x, obj_goal.y, 2, false); // needs some shenanigans to make it work, but yeah.
 	//mp_linear_step(obj_goal.x, obj_goal.y, 2, false);
-}
+//}
