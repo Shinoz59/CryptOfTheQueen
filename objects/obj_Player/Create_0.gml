@@ -3,6 +3,7 @@
 
 // Make all object variables here
 
+randomize(); // just stored here for now, don't worry about it.
 v_speed = 0;
 is_controlling = true;
 can_walk = true;

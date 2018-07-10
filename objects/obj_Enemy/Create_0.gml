@@ -4,3 +4,4 @@
 // Need to figure out the pathing stuff.
 
 //path_start(explore_path, 2, path_action_stop, true);
+path_position = 1; // easiest way to get the path stuff jumpstarted.
