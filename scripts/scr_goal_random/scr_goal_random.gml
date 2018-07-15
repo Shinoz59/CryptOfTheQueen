@@ -13,12 +13,6 @@ if(obj.path_position == 1){ // If its at the end of the path.
 	xpos += obj.x; // Need some kind of snapping to grid here, otherwise it'll slowly drift off of the grid.
 	ypos += obj.y;
 	
-	// obj-goal will be more of a debug thing at the moment, but should work regardless.
-	instance_create_layer(xpos, ypos, "Instances", obj_goal);
-		
-	var myPath = path_add();
-	mp_grid_path(myGrid, myPath, x, y, obj_goal.x, obj_goal.y, false);
-	//mp_potential_path(myPath, obj_goal.x, obj_goal.y, 2, 5, false);
-	path_start(myPath, 2, path_action_stop, true);
+	scr_createGoal(obj, xpos, ypos);
 }
 //}
