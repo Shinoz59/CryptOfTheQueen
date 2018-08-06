@@ -14,3 +14,4 @@ var myPath = path_add();
 mp_grid_path(myGrid, myPath, x, y, obj_goal.x, obj_goal.y, false);
 	//mp_potential_path(myPath, obj_goal.x, obj_goal.y, 2, 5, false);
 path_start(myPath, 2, path_action_stop, true);
+state = Enemy_State.Exploring;

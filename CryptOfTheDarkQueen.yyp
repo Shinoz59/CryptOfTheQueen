@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "2aab5d05-1533-4de2-9157-c19d1bc27dba",
+            "Value": {
+                "id": "a74541e5-7503-4392-96ae-ce9d98ad8eaa",
+                "resourcePath": "scripts\\scr_EnemyCollision\\scr_EnemyCollision.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2d645458-ad81-4c1b-9562-068f3a4768c3",
             "Value": {
                 "id": "78bd2203-7651-4d94-898e-1f3686c98613",
@@ -116,6 +124,14 @@
                 "id": "c496fc97-4ee6-49ba-87d6-42940cd3eb79",
                 "resourcePath": "scripts\\scr_GenerateTileGridObstacles\\scr_GenerateTileGridObstacles.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3ca397c1-d465-4880-a0bf-1330b8f7fda9",
+            "Value": {
+                "id": "56a64479-18d2-4a13-8e27-b8d1aba27552",
+                "resourcePath": "objects\\obj_Physical\\obj_Physical.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -375,6 +391,14 @@
             }
         },
         {
+            "Key": "dc52b1ac-cfe7-4e50-9d4e-78a6c89d5bc6",
+            "Value": {
+                "id": "aa36637a-8715-4f86-9bb4-d6cbce30cb28",
+                "resourcePath": "objects\\obj_Logic\\obj_Logic.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ea786798-0522-451e-8746-d6c84bb45796",
             "Value": {
                 "id": "d9ccc2dd-6b59-4357-a7dd-34116b3f360a",
@@ -415,7 +439,8 @@
         "69b0862f-a011-4500-9d8a-51a3e5859200",
         "33d545dc-adfa-4de9-97a0-00ca642bd982",
         "d78b24f6-1acf-4a33-ba50-3a40d37ecad6",
-        "a39678ec-fb24-4876-90fa-ef4142d19f42"
+        "a39678ec-fb24-4876-90fa-ef4142d19f42",
+        "2aab5d05-1533-4de2-9157-c19d1bc27dba"
     ],
     "tutorial": ""
 }

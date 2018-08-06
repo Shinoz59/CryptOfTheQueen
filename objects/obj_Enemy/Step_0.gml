@@ -17,27 +17,30 @@ else if (direction >= 226 && direction <= 305){
 	image_angle = 270;
 }
 
+// I want knockback now.
+
+scr_EnemyCollision(id);
+
+if (state == Enemy_State.HitStun){
+	x += dx * bounceSpeed;
+	y += dy * bounceSpeed;
+	if (scr_TileCollission(id) == 1){ // bounce off of stuff 'cause its funny.
+		dx *= -1;
+		dy *= -1;
+	}
+}
+// Okay so if collission with player or attack hitbox thingy.
+// end the path
+// take 'damage'
+// set speed back i dunno 2 squares?
+// stop if you hit a wall.
+// resume pathing once done.
+
 // OKAY, testing goal stuff.
 
 // Need to select from between available goals for the character.
 // for now though,
 
-scr_goal_random(id);
-
-//if (mouse_check_button_pressed(mb_left)) {
-//	if(instance_exists(obj_goal)){
-//		instance_destroy(obj_goal); // huh, neat.  didn't know you could do that.
-//	}
-//	instance_create_layer(mouse_x, mouse_y, "Instances", obj_goal);
-//	
-//	var myPath = path_add();
-//	mp_grid_path(myGrid, myPath, x, y, obj_goal.x, obj_goal.y, false);
-	//mp_potential_path(myPath, obj_goal.x, obj_goal.y, 2, 5, false);
-//	path_start(myPath, 2, path_action_stop, true);
-//}
-// how to find a path goal based on ai knowledge instead of just clicking for a path.
-
-//if (instance_exists(obj_goal)){
-	//mp_potential_step(obj_goal.x, obj_goal.y, 2, false); // needs some shenanigans to make it work, but yeah.
-	//mp_linear_step(obj_goal.x, obj_goal.y, 2, false);
-//}
+if (state == Enemy_State.Idle || state == Enemy_State.Exploring){
+	scr_goal_random(id);
+}
