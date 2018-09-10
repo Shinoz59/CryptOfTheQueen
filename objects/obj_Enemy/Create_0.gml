@@ -12,7 +12,8 @@ enum Enemy_State {
 
 // Need to figure out the pathing stuff.
 path_position = 1;
-
+myHealth = 20; // need the hero to be killable
+global.TrackedHealth = myHealth;
 //path_start(explore_path, 2, path_action_stop, true);
 //path_position = 1; // easiest way to get the path stuff jumpstarted.
 

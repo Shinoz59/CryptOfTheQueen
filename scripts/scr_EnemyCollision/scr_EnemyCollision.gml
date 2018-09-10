@@ -34,6 +34,8 @@ if(obj.state != Enemy_State.HitStun){
 			obj.dy = yDir;
 			 // Do some damage based on collided with obstacle.
 			alarm_set(0, 20); // count down from 20?
+			obj.myHealth -= 1; // do some damage
+			global.TrackedHealth = myHealth; // Make sure this is being tracked.
 			
 			path_end(); // can no longer follow the path anyway.
 			break; // Only pay attention to the first one.

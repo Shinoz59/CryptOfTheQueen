@@ -22,6 +22,8 @@ else if (direction >= 226 && direction <= 305){
 scr_EnemyCollision(id);
 
 if (state == Enemy_State.HitStun){
+	if(myHealth <= 0)
+		room = room_EndScreen;
 	x += dx * bounceSpeed;
 	y += dy * bounceSpeed;
 	if (scr_TileCollission(id) == 1){ // bounce off of stuff 'cause its funny.
