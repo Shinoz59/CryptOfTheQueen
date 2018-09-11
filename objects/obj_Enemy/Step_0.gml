@@ -19,9 +19,10 @@ else if (direction >= 226 && direction <= 305){
 
 // I want knockback now.
 
-scr_EnemyCollision(id);
-
-if (state == Enemy_State.HitStun){
+if (state != Enemy_State.HitStun){
+	scr_EnemyHit(id);
+}
+else{
 	if(myHealth <= 0)
 		room = room_EndScreen;
 	x += dx * bounceSpeed;

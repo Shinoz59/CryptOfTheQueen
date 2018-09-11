@@ -20,3 +20,6 @@ global.TrackedHealth = myHealth;
 fogTilemap = layer_tilemap_get_id("Tiles_2"); // The fog of war tileset
 
 state = Enemy_State.Idle; // Should start pathing immediatly.
+
+attackCooldown = 60;
+attackCooldownMax = 60;
