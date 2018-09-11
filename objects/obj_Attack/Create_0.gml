@@ -4,3 +4,4 @@
 
 timeline_loop = false;
 controllingPlayer = 0;
+team = 0; // 0 = enemy team, 1 = friendly team.

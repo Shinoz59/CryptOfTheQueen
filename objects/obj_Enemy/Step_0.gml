@@ -6,24 +6,31 @@
 // need to adjust this later to make sure it doesn't flip a bunch.
 if (direction >= 306 || direction <= 45){ // using a 90 degree chunk rotated 45 degrees to get a good look.
 	image_angle = 0;
+	facingDirection = facing_direction.East; // facing direction is for attack spawning
 }
 else if (direction >= 46 && direction <= 135){
 	image_angle = 90;
+	facingDirection = facing_direction.North;
 }
 else if (direction >= 136 && direction <= 225){
 	image_angle = 180;
+	facingDirection = facing_direction.West;
 }
 else if (direction >= 226 && direction <= 305){
 	image_angle = 270;
+	facingDirection = facing_direction.South;
 }
 
 // I want knockback now.
 
-if (state != Enemy_State.HitStun){
-	scr_EnemyHit(id);
+if (state != Object_State.HitStun){
+	var collidedWith = scr_FriendlyCollision(id);
+	if (collidedWith != pointer_null)
+		scr_EnemyisHit(id, collidedWith);
+	scr_AttackBasic(id);
 }
 else{
-	if(myHealth <= 0)
+	if(myHealth <= 0) // current end condition.
 		room = room_EndScreen;
 	x += dx * bounceSpeed;
 	y += dy * bounceSpeed;
@@ -44,6 +51,6 @@ else{
 // Need to select from between available goals for the character.
 // for now though,
 
-if (state == Enemy_State.Idle || state == Enemy_State.Exploring){
+if (state == Object_State.Idle || state == Object_State.Exploring){
 	scr_goal_random(id);
 }

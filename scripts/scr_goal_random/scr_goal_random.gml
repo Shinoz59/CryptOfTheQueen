@@ -2,7 +2,7 @@
 var obj = argument0;
 
 //if (mouse_check_button_pressed(mb_left)) {
-if(obj.path_position == 1 || obj.state == Enemy_State.Idle){ // If its at the end of the path.
+if(obj.path_position == 1 || obj.state == Object_State.Idle){ // If its at the end of the path.
 	if(instance_exists(obj_goal)){
 		instance_destroy(obj_goal); // huh, neat.  didn't know you could do that.
 	}

@@ -2,38 +2,20 @@
 // You can write your code in this editor
 
 
-if (is_controlling == true){
+if (is_controlling == true){ // for if the game's paused or something.
 	 // handle base movement.
-	if (can_walk == true){
+	if (state != Object_State.Attacking && state != Object_State.HitStun){
 		scr_NormalWalk(id);
-		scr_TileCollission(id);
+	}
+	if (state == Object_State.Attacking){
+		chargeTime += 1;
+		scr_PlayerCharge(id, chargeTime);
 	}
 	 // Attacking?
-	if (keyboard_check(vk_space) && can_walk){
-		can_walk = false; // Is turned back on by the attack object when it finishes
-		var spawn_x = x;
-		var spawn_y = y;
-		var a_sprite_angle = 0; // For rotating the sprite I guess
-		
-		switch (facingDirection){
-			case facing_direction.North:
-				spawn_y -= sprite_height;
-				break;
-			case facing_direction.South:
-				spawn_y += sprite_height;
-				a_sprite_angle = 180;
-				break;
-			case facing_direction.West:
-				spawn_x -= sprite_width;
-				a_sprite_angle = 90;
-				break;
-			case facing_direction.East:
-				spawn_x += sprite_width;
-				a_sprite_angle = 270;
-				break;
-		}
-		var attack = instance_create_layer(spawn_x, spawn_y, "Instances", obj_Attack);
-		attack.image_angle = a_sprite_angle;
-		attack.controllingPlayer = id;
+	if (keyboard_check(vk_space) && state != Object_State.Attacking && 
+	state != Object_State.HitStun && (dx != 0 || dy != 0)){ // should be moving
+		state = Object_State.Attacking; // Is turned back on by the attack object when it finishes
+		chargeTime = 0; // frames since charge started
 	}
+	scr_TileCollission(id); // Should collide with tiles regardless of anything else going on.
 }
