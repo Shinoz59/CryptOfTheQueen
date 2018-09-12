@@ -16,3 +16,5 @@ fogTilemap = layer_tilemap_get_id("Tiles_2"); // The fog of war tileset
 
 attackCooldown = 100;
 attackCooldownMax = 100;
+
+invincible = false;

@@ -11,7 +11,7 @@ if (keyboard_check(vk_right)) {
 		player.image_index = 0;
 	}
 	player.facingDirection = facing_direction.East;
-	player.dx += 2;
+	player.dx += player.walkSpeed;
 }
 else if (keyboard_check(vk_up)) {
 	if (player.sprite_index != sp_Protag_WalkUp){
@@ -19,14 +19,14 @@ else if (keyboard_check(vk_up)) {
 		player.image_index = 0;
 	}
 	player.facingDirection = facing_direction.North;
-	player.dy -= 2;
+	player.dy -= player.walkSpeed;
 }
 else if (keyboard_check(vk_left)) {
 	if (player.sprite_index != sp_Protag_WalkLeft){
 		player.sprite_index = sp_Protag_WalkLeft;
 		player.image_index = 0;
 	}
-	player.dx -= 2;
+	player.dx -= player.walkSpeed;
 	player.facingDirection = facing_direction.West;
 }
 else if (keyboard_check(vk_down)) {
@@ -34,7 +34,7 @@ else if (keyboard_check(vk_down)) {
 		player.sprite_index = sp_Protag_WalkDown;
 		player.image_index = 0;
 	}
-	player.dy += 2;
+	player.dy += player.walkSpeed;
 	player.facingDirection = facing_direction.South;
 }
 else if (player.sprite_index != sp_Protag_Idle){

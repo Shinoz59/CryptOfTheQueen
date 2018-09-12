@@ -7,3 +7,4 @@ event_inherited(); // grabs the parent stuff.
 v_speed = 0;
 is_controlling = true;
 chargeTime = 0;
+walkSpeed = 3;

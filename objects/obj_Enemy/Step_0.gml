@@ -23,7 +23,7 @@ else if (direction >= 226 && direction <= 305){
 
 // I want knockback now.
 
-if (state != Object_State.HitStun){
+if (state != Object_State.HitStun && invincible == false){
 	var collidedWith = scr_FriendlyCollision(id);
 	if (collidedWith != pointer_null)
 		scr_EnemyisHit(id, collidedWith);

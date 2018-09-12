@@ -15,5 +15,6 @@ obj.state = Object_State.HitStun;
 obj.dx = xDir;
 obj.dy = yDir;
 	// Do some damage based on collided with obstacle.
-alarm_set(0, 10); // count down from 10?
+obj.alarm[0] = 20;
+//alarm_set(0, 20); // can't use because the calling object isn't the player?
 // player doesn't have a path or health.

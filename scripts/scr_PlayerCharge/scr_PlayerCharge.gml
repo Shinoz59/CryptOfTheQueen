@@ -5,11 +5,11 @@
 var player = argument0;
 var time = argument1;
 
-var chargeSpeed = 8 - (time - 5) * (time - 5) / 4;
+var chargeSpeed = 8 - (time - 5) * (time - 5) / 8;
 chargeSpeed = floor(chargeSpeed) + 1;
 player.dx = 0;
 player.dy = 0;
-if(chargeSpeed <= 1){
+if(chargeSpeed <= -2){ // works for now, look for a better solution really.
 	player.state = Object_State.Idle;	
 }
 else{
