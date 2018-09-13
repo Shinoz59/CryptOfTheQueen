@@ -39,6 +39,35 @@ else{
 		dy *= -1;
 	}
 }
+
+if (invincible == true){ // code to make them flash.  Replace with a shader maybe?
+	if (invinicble_flash > 2)
+		visible = false;
+	else
+		visible = true;
+	invinicble_flash += 1;
+	if (invinicble_flash > 5)
+		invinicble_flash = 0;
+}
+else
+	visible = true;
+
+if (target == noone){
+	var sighted = scr_SeePlayer(id);
+	if(sighted != noone){
+		target = sighted;
+		path_end(); // stop if you see the player
+		path_position = 1;
+		scr_goal_Attack(id);
+	}
+}
+else{
+	if (distance_to_object(target) > 32 * 3){
+		path_end();
+		path_position = 1;
+		target = noone;
+	}
+}
 // Okay so if collission with player or attack hitbox thingy.
 // end the path
 // take 'damage'
@@ -52,5 +81,8 @@ else{
 // for now though,
 
 if (state == Object_State.Idle || state == Object_State.Exploring){
-	scr_goal_random(id);
+	if (target == noone)
+		scr_goal_random(id);
+	else
+		scr_goal_Attack(id);
 }
