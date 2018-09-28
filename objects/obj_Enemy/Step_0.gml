@@ -21,13 +21,11 @@ else if (direction >= 226 && direction <= 305){
 	facingDirection = facing_direction.South;
 }
 
-// I want knockback now.
 
-if (state != Object_State.HitStun && invincible == false){
+if (state != Object_State.HitStun && invincible == false){ // Knockback/bouncing
 	var collidedWith = scr_FriendlyCollision(id);
 	if (collidedWith != pointer_null)
 		scr_EnemyisHit(id, collidedWith);
-	scr_AttackBasic(id);
 }
 else{
 	if(myHealth <= 0) // current end condition.
@@ -37,6 +35,14 @@ else{
 	if (scr_TileCollission(id) == 1){ // bounce off of stuff 'cause its funny.
 		dx *= -1;
 		dy *= -1;
+	}
+}
+
+if (state != Object_State.HitStun){
+	if (attackCooldown > 0)
+		attackCooldown -= 1;
+	else if (target != noone){
+		scr_AttackBasic(id);
 	}
 }
 
@@ -68,13 +74,6 @@ else{
 		target = noone;
 	}
 }
-// Okay so if collission with player or attack hitbox thingy.
-// end the path
-// take 'damage'
-// set speed back i dunno 2 squares?
-// stop if you hit a wall.
-// resume pathing once done.
-
 // OKAY, testing goal stuff.
 
 // Need to select from between available goals for the character.
