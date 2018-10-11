@@ -20,6 +20,12 @@ for (var i = objx - 64; i <= maxX; i += 32){
 				if (existingObstacle != 2 && existingObstacle != 1){ // only count the walls/pillars
 					mp_grid_clear_rectangle(myGrid, i - 15, j - 15, i, j); // clear out the grid tile?
 				}
+				if (existingObstacle == 3){
+					mp_grid_clear_rectangle(myGrid, i - 15, j - 15, i, j); // clear out the grid tile?
+					obj.goal_found = true;
+					obj.goal_x = i;
+					obj.goal_y = j;
+				}
 			}
 		}
 	}

@@ -81,7 +81,11 @@ else{
 
 if (state == Object_State.Idle || state == Object_State.Exploring){
 	if (target == noone)
-		scr_goal_random(id);
+		if (goal_found == true){
+			scr_goal_End(id);
+		}
+		else
+			scr_goal_random(id);
 	else
 		scr_goal_Attack(id);
 }

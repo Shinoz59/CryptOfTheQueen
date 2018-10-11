@@ -21,3 +21,6 @@ invinicble_flash = 0;
 invincible = false;
 
 target = noone;
+goal_found = false;
+goal_x = 0;
+goal_y = 0;
