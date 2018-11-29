@@ -37,7 +37,7 @@ if(obj.path_position == 1 || obj.state == Object_State.Idle){ // If its at the e
 		objx += floor(xVar) * 32;
 		objy += floor(yVar) * 32;
 	
-		scr_createGoal(obj, objx, objy);	
+		scr_createGoal(obj, objx, objy); // Shouldn't need to check for valid tiles?  Debug this to make sure.
 	}
 }
 //}

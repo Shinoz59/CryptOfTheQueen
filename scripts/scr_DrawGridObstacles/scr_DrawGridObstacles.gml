@@ -7,7 +7,7 @@ var j;
 
 var max_x = grid.grid_cell_count_x * grid.grid_size_x + grid.grid_start_x;
 var max_y = grid.grid_cell_count_y * grid.grid_size_y + grid.grid_start_y;
-var tilemap = layer_tilemap_get_id("Tiles_1"); // change later probably.
+var tilemap = layer_tilemap_get_id("CollisionTiles"); // change later probably.
 var visionmap = layer_tilemap_get_id("Tiles_2"); // same.
 
 for(i = grid.grid_start_x + 16; i < max_x; i += 32){

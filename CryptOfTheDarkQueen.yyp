@@ -31,6 +31,22 @@
     },
     "resources": [
         {
+            "Key": "023f8812-b1ae-4052-8cd0-76590384c158",
+            "Value": {
+                "id": "e2bb5f0e-2f98-4a23-85c7-6981aeb6c9db",
+                "resourcePath": "sprites\\spr_StairsDown\\spr_StairsDown.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "03db620d-2570-4f68-acb7-6c28d81c692d",
+            "Value": {
+                "id": "99939d79-60d9-42d5-b3eb-df0afb51ab93",
+                "resourcePath": "sprites\\spr_StairsUp\\spr_StairsUp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "044eedb7-c196-45c7-872c-f538bd750258",
             "Value": {
                 "id": "a8f3a628-1af8-4d21-b457-967de6d06e76",
@@ -495,6 +511,14 @@
             }
         },
         {
+            "Key": "cabb30da-d1f9-4d3a-baf5-32d75bc74877",
+            "Value": {
+                "id": "a7a01d33-5083-441d-9dad-74a5d1c4a406",
+                "resourcePath": "scripts\\scr_checkGoalTiles\\scr_checkGoalTiles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "c86c3fa4-5732-4efc-9bec-1b6fac5718df",
@@ -601,7 +625,8 @@
         "33d545dc-adfa-4de9-97a0-00ca642bd982",
         "bcfc64e7-cb45-4576-9ac0-cb44a309c29f",
         "11fc3d35-530b-4087-b195-4822a332cc1e",
-        "d78b24f6-1acf-4a33-ba50-3a40d37ecad6"
+        "d78b24f6-1acf-4a33-ba50-3a40d37ecad6",
+        "cabb30da-d1f9-4d3a-baf5-32d75bc74877"
     ],
     "tutorial": ""
 }

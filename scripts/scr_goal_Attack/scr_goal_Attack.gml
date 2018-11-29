@@ -1,30 +1,41 @@
 // argument0 = 'enemy' object.
 var obj = argument0;
 var target = obj.target;
+var pathValid = 1; // 0 is valid.
+var cantPath = 0;
 
 if (obj.path_position == 1 || obj.state == Object_State.Idle){ // If its at the end of the path.
-	if(instance_exists(obj_goal)){
+	if (instance_exists(obj_goal)){
 		instance_destroy(obj_goal); // huh, neat.  didn't know you could do that.
 	}
-	var dx = target.x - obj.x;
-	var dy = target.y - obj.y; // vector from object to target.
+	while (pathValid != 0){
+		var dx = target.x - obj.x;
+		var dy = target.y - obj.y; // vector from object to target.
 	
-	//if (obj.attackCooldown > 5){
-	//	dx *= -1;
-	//	dy *= -1;
-	//}
-    // VERY MUCH NEEDS DEBUGGING
-	var dist = point_distance(0, 0, dx, dy);
-	var normx = dx / dist;
-	var normy = dy / dist; // Normalized vector
+		//if (obj.attackCooldown > 5){
+		//	dx *= -1;
+		//	dy *= -1;
+		//}
+	    // VERY MUCH NEEDS DEBUGGING
+		var dist = point_distance(0, 0, dx, dy);
+		var normx = dx / dist;
+		var normy = dy / dist; // Normalized vector
 
-	var tarx = target.x - (normx * 52);
-	var tary = target.y - (normy * 52); // a point about half a tile away from the target
+		var tarx = target.x - (normx * 52);
+		var tary = target.y - (normy * 52); // a point about half a tile away from the target
 
-	var variance = random(16) - 8;
-	tarx -= (normx * variance * 2);
-	tary -= (normy * variance * 2); // shuffling it a bit.
-
+		var variance = random(16) - 8;
+		tarx -= (normx * variance * 2);
+		tary -= (normy * variance * 2); // shuffling it a bit.
+		pathValid = scr_checkGoalTiles(obj, tarx, tary);
+		cantPath += 1;
+		
+		if (cantPath > 5){ // If we can't find a path, then give up.  I'm lazy.
+			obj.state = Object_State.Idle;
+			return;
+		}
+	}
+	
 	scr_createGoal(obj, tarx, tary); // should work now
 }
 // okay so I want to target a few different squares.  Then randomly choose between 3 or so of them.

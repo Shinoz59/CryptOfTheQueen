@@ -4,7 +4,7 @@ var obj = argument0;
 
 // maybe pull from a vision stat or something?
 
-var maptiles = layer_tilemap_get_id("Tiles_1");
+var maptiles = layer_tilemap_get_id("CollisionTiles");
 var objx = floor(obj.x) - floor(obj.x) % 32 + 16; // Recenters the x/y so that the pathing map won't be broken.
 var objy = floor(obj.y) - floor(obj.y) % 32 + 16;
 var maxX = objx + 64;
