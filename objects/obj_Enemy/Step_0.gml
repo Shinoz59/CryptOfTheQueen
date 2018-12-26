@@ -85,7 +85,7 @@ if (state == Object_State.Idle || state == Object_State.Exploring){
 			scr_goal_End(id);
 		}
 		else
-			scr_goal_random(id);
+			scr_goal_explore(id);
 	else
 		scr_goal_Attack(id);
 }

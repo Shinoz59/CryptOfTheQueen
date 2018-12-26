@@ -7,11 +7,11 @@ var obj = argument0;
 var maptiles = layer_tilemap_get_id("CollisionTiles");
 var objx = floor(obj.x) - floor(obj.x) % 32 + 16; // Recenters the x/y so that the pathing map won't be broken.
 var objy = floor(obj.y) - floor(obj.y) % 32 + 16;
-var maxX = objx + 64;
-var maxY = objy + 64;
+var maxX = objx + 96; // 3-tile vision currently
+var maxY = objy + 96;
 
-for (var i = objx - 64; i <= maxX; i += 32){
-	for (var j = objy - 64; j <= maxY; j += 32){
+for (var i = objx - 96; i <= maxX; i += 32){
+	for (var j = objy - 96; j <= maxY; j += 32){
 		if( i > 0 && j > 0){
 			var shouldChange = tilemap_get_at_pixel(obj.fogTilemap, i, j) & tile_index_mask;
 			if (shouldChange > 0){
