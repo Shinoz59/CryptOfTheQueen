@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "0ddb1410-b84e-4bc9-b8a9-db88025b4aaa",
+            "Value": {
+                "id": "1b5efb53-7e64-4fc8-a648-eb17490e6151",
+                "resourcePath": "objects\\obj_MoveDownFloor\\obj_MoveDownFloor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0ea8be83-583f-4fe2-8b54-e300ba55ec65",
             "Value": {
                 "id": "dba42d0a-a19c-4207-a21a-09fd9e380e47",
@@ -100,6 +108,14 @@
                 "id": "19d1d42a-3034-49d1-be0d-dd41eeef025c",
                 "resourcePath": "scripts\\scr_goal_Attack\\scr_goal_Attack.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "156f440c-d23b-429b-ba95-a2d18dc736a0",
+            "Value": {
+                "id": "554dc8f8-38cb-43f8-877e-83b0bf6ea5e8",
+                "resourcePath": "rooms\\room_BadEndScreen\\room_BadEndScreen.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -164,6 +180,14 @@
                 "id": "78bd2203-7651-4d94-898e-1f3686c98613",
                 "resourcePath": "paths\\explore_path\\explore_path.yy",
                 "resourceType": "GMPath"
+            }
+        },
+        {
+            "Key": "2dfa1961-eaf8-461e-a651-9e47747e1b68",
+            "Value": {
+                "id": "ac508ba0-86bd-48cc-88fb-c67f297b95f4",
+                "resourcePath": "scripts\\scr_DownFloor\\scr_DownFloor.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -279,6 +303,14 @@
             }
         },
         {
+            "Key": "6d967a08-4591-433e-af0e-e7dbdc290b14",
+            "Value": {
+                "id": "382c4772-4757-4715-bd85-b04c978ad928",
+                "resourcePath": "views\\6d967a08-4591-433e-af0e-e7dbdc290b14.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "74eaf724-ce46-44bb-8196-db06080dfe39",
             "Value": {
                 "id": "7e1c67c5-af8a-4cca-a8d9-379f48f7fc71",
@@ -300,6 +332,14 @@
                 "id": "2cc501a2-ffab-45cf-8327-5eeee90df70e",
                 "resourcePath": "tilesets\\tileset_FloorTiles\\tileset_FloorTiles.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "80b56dd3-95c9-4967-8939-d17521700c45",
+            "Value": {
+                "id": "93083c76-a17f-41ca-aa7c-0bf4f85ef82a",
+                "resourcePath": "sprites\\spr_FailScreen\\spr_FailScreen.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -583,6 +623,14 @@
             }
         },
         {
+            "Key": "edaaed6d-1c22-4efc-9268-f61001ed8cf8",
+            "Value": {
+                "id": "ca06a030-5c65-45c2-8040-d9e0902fc09e",
+                "resourcePath": "scripts\\scr_goal_Rest\\scr_goal_Rest.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "1fb59b6b-33de-4559-bdc1-385a665cb8fd",
@@ -596,6 +644,14 @@
                 "id": "deed82c5-11a6-47ad-8ee7-cfec7af5c64a",
                 "resourcePath": "views\\f7135a15-ce93-413f-92bc-f920d64fc286.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fb3cdfa0-1614-4959-8cc3-e545bc383cb1",
+            "Value": {
+                "id": "e58dfa4e-7cd2-4f37-a018-347ebaa2fcce",
+                "resourcePath": "tilesets\\tileset_UITiles\\tileset_UITiles.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -635,7 +691,9 @@
         "bcfc64e7-cb45-4576-9ac0-cb44a309c29f",
         "11fc3d35-530b-4087-b195-4822a332cc1e",
         "d78b24f6-1acf-4a33-ba50-3a40d37ecad6",
-        "cabb30da-d1f9-4d3a-baf5-32d75bc74877"
+        "cabb30da-d1f9-4d3a-baf5-32d75bc74877",
+        "edaaed6d-1c22-4efc-9268-f61001ed8cf8",
+        "2dfa1961-eaf8-461e-a651-9e47747e1b68"
     ],
     "tutorial": ""
 }

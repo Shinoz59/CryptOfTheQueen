@@ -1,24 +1,24 @@
 {
-    "id": "dc52b1ac-cfe7-4e50-9d4e-78a6c89d5bc6",
+    "id": "0ddb1410-b84e-4bc9-b8a9-db88025b4aaa",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_Logic",
+    "name": "obj_MoveDownFloor",
     "eventList": [
         {
-            "id": "5b2e35c6-b594-4b81-b854-90c52778da71",
+            "id": "504977d1-d68b-4bf7-8c0c-eba7012a0562",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "dc52b1ac-cfe7-4e50-9d4e-78a6c89d5bc6"
+            "m_owner": "0ddb1410-b84e-4bc9-b8a9-db88025b4aaa"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": true,
+    "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,

@@ -7,6 +7,10 @@ if(obj.path_position == 1 || obj.state == Object_State.Idle){ // If its at the e
 	if(instance_exists(obj_goal)){
 		instance_destroy(obj_goal); // huh, neat.  didn't know you could do that.
 	}
+	if (distance < 10){ // Some wiggle Room;
+		scr_DownFloor(obj);
+		return;
+	}
 	if (distance < 128 ){ // If its close enough, just go straight there.
 		scr_createGoal(obj, obj.goal_x, obj.goal_y);	
 	}

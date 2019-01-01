@@ -16,10 +16,10 @@ enum Object_State {
 	Exploring = 2,
 	HitStun = 3,
 	Fleeing = 4,
-	Attacking = 5
+	Attacking = 5,
+	Resting = 6
 };
 
-tilemap = layer_tilemap_get_id("CollisionTiles");
 // sprite info
 sprite_bbox_left = sprite_get_bbox_left(sprite_index) - sprite_get_xoffset(sprite_index);
 sprite_bbox_bottom = sprite_get_bbox_bottom(sprite_index) - sprite_get_yoffset(sprite_index);

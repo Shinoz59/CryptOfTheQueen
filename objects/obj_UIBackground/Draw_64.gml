@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_sprite(sprite_index,-1,x,y);
-//draw_sprite_stretched(sprite_index,-1,x,y,544,124);
+// The draw sprite stuff didn't work, so just the text.
 draw_set_font(UIFont);
 var xx = x + 8;
 var yy = y + 8;

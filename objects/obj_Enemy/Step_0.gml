@@ -84,8 +84,13 @@ if (state == Object_State.Idle || state == Object_State.Exploring){
 		if (goal_found == true){
 			scr_goal_End(id);
 		}
-		else
-			scr_goal_explore(id);
+		else{
+			var ran = random_range(0,1);
+			if (ran <= 0.2)
+				scr_goal_Rest(id);
+			else
+				scr_goal_explore(id);
+		}
 	else
 		scr_goal_Attack(id);
 }
